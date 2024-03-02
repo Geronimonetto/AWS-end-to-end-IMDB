@@ -650,6 +650,10 @@ Quando criarem as devemos criar uma tabela fato com informações principais usa
 ## Dashboards
 
 Por fim e o queridinho de muitos os dashboards de finalização do projeto, sendo eles comparativos entre os gêneros de terror e mistério (Solicitado no projeto)
+### Filmes
+![](https://github.com/Geronimonetto/Projeto_API_Filmes/blob/main/06.Dashboards/filmes.JPG)
 
-![](https://github.com/Geronimonetto/Projeto_API_Filmes/blob/main/06.Dashboards/Dashboard_filmes.pdf)
+
+### Series
+![](https://github.com/Geronimonetto/Projeto_API_Filmes/blob/main/06.Dashboards/series.JPG)
 
