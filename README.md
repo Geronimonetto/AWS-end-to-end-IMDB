@@ -1,7 +1,14 @@
 # AWS end-to-end IMDB
 
-O projeto é baseado em serviços de cloud e tem como principal objetivo verificar os filmes contidos em um arquivo csv, que faltam informações dentro dele, 
-sendo assim necessário utilização da API do TMDB para consultas dos IDs dos filmes e obter essas informações adicionais.
+## Visão Geral
+
+A princípio, foi passado um arquivo Excel que precisaria ser complementado com informações de uma API do IMDB. Para isso, seria necessário realizar a busca desses dados utilizando o AWS Lambda, verificando se o filme já existia no arquivo e atualizando as informações conforme fossem encontradas na API no formato JSON.
+
+Em seguida, os dados precisariam ser armazenados no AWS S3. Para a modelagem dos dados, seria necessário criar estruturas em formato Raw, Trusted e Refined utilizando o AWS Glue para a transformação dos dados. Além disso, seria necessário criar um banco de dados MySQL, configurar suas permissões com o AWS CloudFormation e IAM, garantindo que apenas um usuário específico tivesse acesso a esse banco.
+
+A leitura do banco de dados deveria ser feita com o AWS Crawler, para possibilitar consultas no AWS Athena. Seria também necessário criar views no AWS Athena para melhorar a performance das consultas. Após isso, gerar insights no AWS QuickSight e, finalmente, apresentar o projeto com um vídeo de apresentação.
+
+## Desenvolvimento do Projeto:
 
 Requisitos mínimos: 
 - Criar API no TMDB - https://developer.themoviedb.org/reference/intro/getting-started
