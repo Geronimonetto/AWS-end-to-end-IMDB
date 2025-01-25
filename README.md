@@ -137,8 +137,8 @@ def send_data(json_filename: str, type_gender_func: str, number_file: int) -> No
     """
     bucket_name: str = 'data-lake-desafio-final'
     session = boto3.Session(
-        aws_access_key_id='AKIAZYAXJ7C03HYOH06D',
-        aws_secret_access_key='xiPEysY1rZRzuu4L1D/pJx0n21Bb5bbaB+QovuSA'
+        aws_access_key_id='',
+        aws_secret_access_key=''
     )
     s3 = session.client('s3')  # escolhendo o recurso S3
     s3.upload_file(json_filename, bucket_name,
@@ -235,8 +235,8 @@ def pages_gener():
 
 def process_data(list_id):
     s3 = boto3.client('s3',
-                      aws_access_key_id='AKIAZYAXJ7CO2LO2CJG2',
-                      aws_secret_access_key='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'
+                      aws_access_key_id='',
+                      aws_secret_access_key=''
                       )
 
     bucket_name = 'data-lake-desafio-final'
